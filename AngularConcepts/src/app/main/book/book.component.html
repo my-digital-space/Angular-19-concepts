@@ -1,0 +1,13 @@
+<div class="book-card">
+    <div class="book-header">
+        <h2>{{ book.title }}</h2>
+        <h4>by {{ book.author }}</h4>
+    </div>
+    <div class="book-body">
+        <p>{{ book.description }}</p>
+    </div>
+    <div class="book-footer">
+        <a [routerLink]="['/book', book.id]" routerLinkActive="router-link-active"  class="read-more">Read More</a>
+    </div>
+</div>
+

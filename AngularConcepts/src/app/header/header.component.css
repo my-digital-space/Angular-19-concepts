@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-item {
+    display: inline;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
