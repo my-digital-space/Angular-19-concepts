@@ -5,11 +5,6 @@ import { BookBuyComponent } from './main/book-buy/book-buy.component';
 
 export const routes: Routes = [
     {
-        path: '',
-        component: HomeComponent,
-        title: 'Home'
-    },
-    {
         path: 'books',
         component: BooksComponent,
         title: 'Books'
@@ -20,7 +15,13 @@ export const routes: Routes = [
         title: 'Book'
     },
     {
+        path: '',
+        component: HomeComponent,
+        title: 'Home'
+    },
+    {
         path: '**',
-        redirectTo: ''
+        redirectTo: '',
+        pathMatch: 'full'
     }
 ];
